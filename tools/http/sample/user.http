@@ -1,0 +1,25 @@
+### GET /user/:id
+GET http://{{address}}/user/1000
+
+### GET /user/history
+GET http://{{address}}/user/history/1000?month=7&year=2025
+
+### PUT /user/segment
+PUT http://{{address}}/user/segment
+
+{ "user_id": 1000, "slugs_to_add": ["AVITO_VOICE_MESSAGES", "AVITO_PERFORMANCE_VAS"], "slugs_to_del": ["AVITO_DISCOUNT_30"] }
+
+### PUT /user/segment
+PUT http://{{address}}/user/segment
+
+{ "user_id": 1000, "slugs_to_add": ["AVITO_VOICE_MESSAGES"], "slugs_to_del": [], "delete_at": 1853805983 }
+
+### PUT /user/segment
+PUT http://{{address}}/user/segment
+
+{ "user_id": 1000, "slugs_to_add": [], "slugs_to_del": ["AVITO_VOICE_MESSAGES"] }
+
+### PUT /user/segment
+PUT http://{{address}}/user/segment
+
+{ "user_id": 1000, "slugs_to_add": ["UNKNOWN"], "slugs_to_del": [] }

@@ -1,0 +1,44 @@
+### POST /segment/add
+POST http://{{address}}/segment/add
+
+{ "slug": "AVITO_VOICE_MESSAGES" }
+
+### POST /segment/add
+POST http://{{address}}/segment/add
+
+{ "slug": "AVITO_PERFORMANCE_VAS" }
+
+### POST /segment/add
+POST http://{{address}}/segment/add
+
+{ "slug": "AVITO_DISCOUNT_30" }
+
+### POST /segment/add
+POST http://{{address}}/segment/add
+
+{ "slug": "AVITO_DISCOUNT_50" }
+
+### POST /segment/add
+POST http://{{address}}/segment/add
+
+{ "slug": "AVITO_VOICE_MESSAGES", "percentage": 101 }
+
+### DELETE /segment/delete
+DELETE http://{{address}}/segment/delete
+
+{ "slug": "AVITO_VOICE_MESSAGES" }
+
+### DELETE /segment/delete
+DELETE http://{{address}}/segment/delete
+
+{ "slug": "AVITO_PERFORMANCE_VAS" }
+
+### DELETE /segment/delete
+DELETE http://{{address}}/segment/delete
+
+{ "slug": "AVITO_DISCOUNT_30" }
+
+### DELETE /segment/delete
+DELETE http://{{address}}/segment/delete
+
+{ "slug": "AVITO_DISCOUNT_50" }
