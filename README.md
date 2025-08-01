@@ -12,11 +12,15 @@ API Server technology stack is
 - ORM: `gorm`
 
 Start App:
+
 ```bash
 docker-compose up -d
 ```
 
+After this the service will be available on the port `:8080`.
+
 Apply migrations (`golang-migrate`):
+
 ```bash
 make .migrate
 ```
