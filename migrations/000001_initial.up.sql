@@ -20,7 +20,7 @@ CREATE TABLE users_segments (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
     deleted_at TIMESTAMP WITH TIME ZONE,
     CONSTRAINT unique_users_segments_user_id_segment_id UNIQUE (user_id, segment_id),
-    CONSTRAINT fk_users_segments_user_id FOREIGN KEY (user_id) REFERENCES users (id),
-    CONSTRAINT fk_users_segments_segment_id FOREIGN KEY (segment_id) REFERENCES segments (id)
+    CONSTRAINT fk_users_segments_user_id FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
+    CONSTRAINT fk_users_segments_segment_id FOREIGN KEY (segment_id) REFERENCES segments (id) ON DELETE CASCADE
 );
 CREATE INDEX idx_users_segments_user_id ON users_segments(user_id);
